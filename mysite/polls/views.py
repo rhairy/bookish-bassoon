@@ -40,10 +40,10 @@ class ResultsView(generic.DetailView):
     model = Question
     template_name = "polls/results.html"
 
-def index(request):
+def auth0(request):
     return render(
         request,
-        "index.html",
+        "polls/auth0.html",
         context={
             "session": request.session.get("user"),
             "pretty": json.dumps(request.session.get("user"), indent=4),

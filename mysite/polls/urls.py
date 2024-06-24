@@ -10,5 +10,6 @@ urlpatterns = [
     path("<int:question_id>/vote/", views.vote, name="vote"),
     path("login", views.login, name="login"),
     path("logout", views.logout, name="logout"),
-    path("callback", views.callback, name="callback")
+    path("callback", views.callback, name="callback"),
+    path("auth0", views.auth0, name="auth0")
 ]
